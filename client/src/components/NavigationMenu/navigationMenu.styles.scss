@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.horizontal {
+  align-items: center;
+  flex-direction: row;
+}
+
+.vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.link {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.vertical .link {
+  width: 100%;
+  padding: 0.75rem 0;
+  border-bottom: none;
+}
+
+.link:hover,
+.active {
+  color: #9c6bff;
+  border-color: #9c6bff;
+}
+
+.vertical .link:hover,
+.vertical .active {
+  border-color: transparent;
+  color: #9c6bff;
+}
